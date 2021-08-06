@@ -1,0 +1,88 @@
+<Html>
+    <head>
+        <title>C.V</title>
+    </head>
+    <body >
+        <form>
+            <table>
+                <b>Personal Details:</b><br/><br/>
+                FirstName:<input type="text" placeholder="First Name"/>
+                LastName:<input type="text" placeholder="Last Name"/><br/><br/>
+                Profession:<input type="text" name="Prof"/><br/><br/>
+                City:<select>
+                    <option>----Select City----</option>
+                    <optgroup label="Maharastra">
+                        <option>Pune</option>
+                        <option>Mumbai</option>
+                    </optgroup>
+                    <optgroup label="MadhyaPardesh">
+                        <option>Khandwa</option>
+                        <option>Burhanpur</option>
+                        <option>Indore</option>
+                    </optgroup>
+
+                    <optgroup label="Gujarat">
+                        <option>Ahmedaad</option>
+                        <option>Surat</option>
+                    </optgroup>
+                </select>
+                State:<select>
+                    <option>----State----</option>
+                    <option>MadhyaPardesh</option>
+                    <option>Maharastera</option>
+                    <option>Gujarat</option>
+                    <option>Delhi</option>
+                </select>
+                Pin Code:<input type="text" pattern="[0-9]{6}" title="Six Digit Pin Code"/>
+                <br/><br/>
+                Phone:<input type="number" />
+                Email Address:<input type="email" placeholder="Email"/><br/><br/>
+                <b>Work History:</b>
+
+                Job Title:<input type="text" name="Job"/>&nbsp;
+                Employer:<input type="text" name="emp"/><br/><br/>
+                City:<input type="text" name="city"/>&nbsp;
+                State:<input type="text" name="State"/><br/><br/>
+                Start Date:<input type="date" value="date"/>&nbsp;
+                End Date:<input type="date" value="date"/><br/><br/>
+                <input type="checkbox" id="box" value="work"/>
+                <label for="box">I am currently work here</label>
+                <br/><br/>
+                <b>Education:</b><br/><br/>
+                School Name:<input type="text" name="school"/>&nbsp;
+                School Location:<input type="text" value="location"/><br/><br/>
+                Degree: <select>
+                            <option disabled>Select</option >
+                            <option>High School Diploma</option>
+                            <option>MCA</option>
+                            <option>MBA</option>
+                            <option>B.E</option>
+                            <option>B.Tech</option>
+                            <option>Ph.D</option>
+                            <option>No Degree</option>
+                        </select>
+               <br/><br/> 
+                Graduation Start Date:<input type="date" value="date"/>&nbsp;
+                Graduation End Date:<input type="date" value="date"/><br/><br/>
+                <b>Skils:</b><br/><br/>
+                <input type="checkbox" id="box1" value="work"/>
+                <label for="box">Java</label><br/>
+                <input type="checkbox" id="box2" value="work"/>
+                <label for="box">HTML</label><br/>
+                <input type="checkbox" id="box3" value="work"/>
+                <label for="box">CSS</label><br/>
+                <input type="checkbox" id="box4" value="work"/>
+                <label for="box">C</label><br/>
+                <input type="checkbox" id="box5" value="work"/>
+                <label for="box">C++</label><br/>
+                <input type="checkbox" id="box6" value="work"/>
+                <label for="box">nodejs</label><br/><br/>
+                <b>Summary:</b><br/><br/>
+                <textarea rows="10"></textarea><br/><br/>
+               <input type="submit" value="submit"/>
+
+            </table>
+        </form>
+
+    </body>
+</Html>
