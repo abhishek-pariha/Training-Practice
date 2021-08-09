@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Pizza Shope</title>
+        <style>
+            .shop
+            {
+                text-align: center;
+            }
+            .ta
+            {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <center>
+                <table border="1" width="50%">
+                    <tr>
+                        <td class="shop" colspan="2"><b>Pizza Shop 2.0</b></td>
+                    </tr><br/>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" name="name"></td>
+                    </tr><br/>
+                    <tr>
+                        <td>Pizza Topping</td>
+                        <td><input type="radio" name="flavoure">
+                            <label>Supreme</label><br/>
+                            <input type="radio" name="flavoure">
+                            <label>Vegetarian</label><br/>
+                            <input type="radio" name="flavoure">
+                            <label>Hawaiian</label><br/>
+                        </td>
+                    </tr><br/>
+                    <tr>
+                        <td>Pizza Sauce</td>
+                        <td>
+                            <select>
+                                <option>Tomato</option>
+                            </select>
+                        </td>
+                    </tr><br/>
+                    <tr>
+                        <td>Optional Extras</td>
+                        <td>
+                            <input type="checkbox" value="extras" name="chees">
+                            <label>Extra cheese</label>
+                            <input type="checkbox" value="base" name="Base">
+                            <label>Gluten Free Base</label>
+                        </td>
+                    </tr><br/>
+                    <tr>
+                        <td>Delivery Instructions:</td>
+                        <td>
+                            <textarea cols="10" rows="10" class="ta"></textarea></td>
+                    </tr><br/>
+                    <tr>
+                        <td colspan="2"><button type="button" value="order">Send my Order</button></td>
+                    </tr><br/>
+                </table>
+            </center>
+        </form>
+    </body>
+</html>

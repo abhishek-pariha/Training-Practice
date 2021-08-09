@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            .p{
+                color: brown;
+            }
+        </style>
+    </head>
+    <body bgcolor="yellow">
+        <p>Personal Information</p><br>
+        <form>
+        <table border="1" width="100%">
+            <tr>
+                <td>
+                    <center>
+                    Sex:<input type="radio" id="male" name="Gender" value="male">
+                        <label for="Male">Male</label>
+                        <input type="radio" id="Female" name="Gender" value="female">
+                        <label for="Female">Female</label><br/><br/>
+                    Birthday:<input type="date" value="dates"><br><br/>
+                    State:  <select>
+                                <option>Surat</option>
+                                <option>Rajkot</option>
+                                <option>Mehsana</option>
+                                <option>Himatnagar</option>
+                                <option>Ahmedaad</option>
+                            </select><br/><br/>
+                    Country:<select>
+                                <option>Gujarat</option>
+                                <option>Maharastera</option>
+                            </select>
+                        </center>
+                </td>
+            </tr>
+        </table>
+        <p>Site Registration</p>
+        <table border="1" width="100%">
+            <tr>
+                <td>
+                    <center>
+                        UserName:<input type="text" name="username"><br/><br/>
+                        Password:<input type="password" name="password"><br/><br/>
+                        Retype Password:<input type="password" name="password"><br/><br/>
+                        Email Address:<input type="email" name="email"><br/><br/>
+                        Retype Email Address:<input type="email" name="email"><br/><br/>
+                    </center>
+                </td>
+            </tr>
+        </table><br/>
+        <center><input type="submit" name="Submit" color="green"></center>
+    </form>
+    </body>
+</html>

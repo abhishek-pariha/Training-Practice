@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+        .ta
+            {
+                width: 100%;
+            }
+        .save{
+                background-color: blue;
+            }
+        .cancel
+        {
+            border-color: blue;
+        }
+        .resize
+        {
+            background-color: darkgray;
+        }
+        body{
+            background-color: darksalmon;
+        }
+        </style>
+    </head>
+    <body>
+        <center>
+            <form>
+                <b>KM Custom HTML Form Example Using AppleScript
+                    (by JMichaelTX)</b>
+                <table border="1" width="50%">
+                    <tr>
+                        <td>
+                            <b>Name:</b>
+                        </td>
+                        <td>
+                            <input type="text" name="fullname">
+                        </td>
+                    </tr><br/>
+                    <tr>
+                        <td>
+                            <b>Email:</b>
+                        </td>
+                        <td>
+                            <input type="email" name="email">
+                        </td>
+                    </tr><br/>
+                    <tr>
+                        <td>
+                            <b>Password:</b>
+                        </td>
+                        <td>
+                            <input type="password" name="password">
+                        </td>
+                    </tr><br/>
+                    <tr>
+                        <td>
+                           <b>Approval Require:</b>
+                            Click on the button or text to
+                            select.
+                        </td>
+                        <td>
+                            <input type="checkbox" name="agree">
+                            <label>Do you agree?</label>
+                        </td>
+                    </tr><br/>
+                    <tr>
+                        <td>
+                            <b>Pick your Favourite:</b>
+                            Click on the button or text to select.
+                        </td>
+                        <td>
+                            <input type="radio" name="choice" id="a">
+                            <label>Choice A</label><br/>
+                            <input type="radio" name="choice" id="b">
+                            <label>Choice B</label><br/>
+                            <input type="radio" name="choice" id="c">
+                            <label>Choice C</label><br/>
+                        </td>
+                    </tr><br/>
+                    <tr>
+                        <td>
+                            <b>Popup Menu:</b>
+                        </td>
+                        <td>
+                            <select>
+                                <option>Texas--Tx</option>
+                            </select>
+                        </td>
+                    </tr><br/>
+                    <tr>
+                        <td>
+                            <b>List</b>
+                            <ul>Setup Option
+                                <li>Number of rows to display</li>
+                                <li>Allow Multi-Select</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <textarea cols="5" rows="5" class="ta">
+                                California--CA
+                                Colorida--CO
+                                Connecticut--CN
+                                Dalifornia-DA
+                                Dolorado-DO
+                            </textarea>
+                        </td>
+                    </tr><br/>
+                    <tr>
+                        <td>
+                            <b>Field Ignored by KM</b>
+                        </td>
+                        <td>
+                            <input type="text" name="km">
+                        </td>
+                    </tr><br/>
+                    <tr>
+                        <td>
+                            <b>Text Area</b>
+                        </td>
+                        <td>
+                            <textarea cols="5" rows="5" class="ta">
+                                Now is the time for all good men to come to the aid of their
+                                country.
+                            </textarea>
+                        </td>
+                    </tr><br/>
+                </table><br/><br/>
+                <button type="submit" class="save">Save</button>
+                <button type="reset" class="cancel">Cancel</button>
+                <button type="button" class="resize">Resize</button>
+            </form>
+        </center>
+    </body>
+</html>
