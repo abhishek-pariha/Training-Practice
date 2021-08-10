@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: turquoise;
+               text-align: center;
+            }
+            .container{
+                background-color:violet;
+                height: 100%;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        
+        <form>
+            <div class="container">
+                <p>Tell us something positive that happend to you today</p>
+                <div>
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name" style="width: 160px;" required>  
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" style="width: 160px;" required>  
+                </div>
+                <div>
+                    <label>On a scale of 1-10, how good was it?</label>
+                    <input type="number" placeholder="Enter number between 1 to 10" min="1" max="10" style="width: 360px;"  required>  
+                </div>
+                <div>
+                    <label>Where did it happen?</label>
+                    <select style="width: 260px;" >
+                        <option>At Home</option>
+                        <option>At Work</option>
+                        <option>On The Street</option>
+                        <option>Other</option>
+                    </select>  
+                </div>
+                <div>
+                    <label>At what time of day did it happen?</label>
+                    <input type="radio" name="day" >
+                    <label>Morning</label><br/>
+                    <input type="radio" name="day">
+                    <label>Afternoon</label><br/>
+                    <input type="radio" name="day">
+                    <label>Evening</label><br/>
+                </div>
+                <div>
+                    <label>What emotions did you experience?
+                        (Select all that apply)</label>
+                    <input type="checkbox" name="excited">
+                    <label>Excited</label><br/>
+                    <input type="checkbox" name="humbled">
+                    <label>Humbled</label><br/>
+                    <input type="checkbox" name="elated">
+                    <label>Elated</label><br/>
+                    <input type="checkbox" name="loved">
+                    <label>Loved</label><br/>
+                    <input type="checkbox" name="enthusiastic">
+                    <label>Enthusiastic</labe<br/>  
+                </div>
+                <div>
+                    <label>Please describe your positive experience.</label>
+                    <textarea cols="10" rows="10" placeholder="Enter your experience here...." style="width: 30%;"></textarea>  
+                </div>
+                <div>
+                    <input type="button" value="submit" style="background-color: tomato;">
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
