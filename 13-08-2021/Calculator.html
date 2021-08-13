@@ -1,0 +1,41 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>22. Make a simple calculator using switch case.</h1>        
+        <button onclick="calculator()">Enter</button>
+    </body>
+
+    <script type="text/javascript">
+       function calculator() 
+       {
+           var tmp;
+           var c =prompt("Enter the choice(either Addition,Substraction,Multipication,Divison)");
+           var a=prompt("Enter first number");
+           var b=prompt("Enter secound number");
+           switch(c)
+           {
+                case "Addition":
+                            tmp=a+b;
+                            document.write(tmp);
+                            break;
+                case "Substraction":
+                            tmp=a-b;
+                            document.write(tmp);
+                            break;
+                case "Multipication":   
+                            tmp=a*b;
+                            document.write(tmp);
+                            break;
+                case "Divison":
+                            tmp=a/b;
+                            document.write(tmp);
+                            break;
+                default:
+                            document.write("Invalid Input");
+                            break;
+           }
+       }
+    </script>
+</html>
