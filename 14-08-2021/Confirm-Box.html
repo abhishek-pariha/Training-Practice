@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <input type="button" onclick="Show_ConfirmBox()" value="Show Confirm Box">
+    </body>
+    <script>
+        function Show_ConfirmBox()
+        {
+            var confirmAction = confirm("Are you sure you execute this action?");
+            if(confirmAction)
+            {
+                alert("Action successfully executed");
+            }
+            else
+            {
+                alert("Action canceled");
+            }
+            
+        }
+    </script>
+</html>
