@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" id="txtbox">
+        <input type="button" value="CLick me" id="submit" onclick="add()">
+        <ul id="Unorder">
+        </ul>
+        <span id="error"></span>
+    </body>
+    <script type="text/javascript">
+        function add()
+        {
+            document.getElementById('error').innerHTML="";
+            var txtbox= document.getElementById('txtbox').value;
+            if(txtbox=="")
+            {
+                document.getElementById('error').innerHTML="Please Enter Value"
+            }
+            else
+            {
+                var Unorder=document.getElementById('Unorder');
+                var li=document.createElement('li');
+                li.textContent=txtbox;
+                Unorder.appendChild(li);
+                
+            }
+           
+            localStorage.setItem=('txtbox',JSON.stringify(txtbox));
+        }
+    </script>
+</html>
