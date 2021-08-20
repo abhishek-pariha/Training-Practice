@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".btn1").click(function(){
+                    $("p").fadeOut();
+                });
+                $(".btn2").click(function(){
+                    $("p").fadeIn();
+                });
+                $(".btn3").click(function(){
+                    $("p").fadeToggle();
+                });
+                $('.btn4').click(function(){
+                    $("p").fadeTo("slow", 0.2);
+                });
+                $('.btn5').click(function(){
+                    $("p").slideUp();
+                });
+                $(".btn6").click(function(){
+                    $("p").slideDown();
+                });
+                $("#btn7").click(function(){
+                    $("p").slideToggle();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button type="button" class="btn1">Fade Out</button>
+        <button type="button" class="btn2">Fade In</button>
+        <button type="button" class="btn3">Toggle</button>
+        <button type="button" class="btn4">Fade To</button>
+        <button type="button" class="btn5">Slide Up</button>
+        <button type="button" class="btn6">Slide Down</button>
+        <button type="button" id="btn7">Toggle`</button>
+        <p>Vivek Singh Parihar</p>
+        <p>Vivek Singh Parihar</p>
+        <p>Vivek Singh Parihar</p>
+        <p>Vivek Singh Parihar</p>
+        <p>Vivek Singh Parihar</p>
+    </body>
+</html>

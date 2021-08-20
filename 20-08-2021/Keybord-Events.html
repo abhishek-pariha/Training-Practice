@@ -1,0 +1,25 @@
+<hrml>
+    <head>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+            i = 0;
+            $(document).ready(function(){
+                $("input").keypress(function(){
+                    $("span").text(i +=1);
+                });
+            });
+            $(document).ready(function(){
+                $("input").keydown(function(){
+                    $("input").css("background-color","red");
+                });
+                $("input").keyup(function(){
+                    $("input").css("background-color","yellow");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        Enter Your Name:<input type="text">
+        <p>Keypress:<span>0</span></p>
+    </body>
+</hrml>

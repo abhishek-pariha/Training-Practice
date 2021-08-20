@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style type="text/css">
+        .b1{
+            width: 100px;
+            height: 100px;
+            background: green;
+            margin-top: 30px;
+            border-style: solid;
+            border-color: gray;
+        }
+        </style>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $(".b1").animate({width: "300px"}).animate({height: "300px"})
+                    .animate({marginleft : "150px"}).animate({borderWidth: "10px"}).animate({opacity: 0.5});
+                });
+               
+            });
+        </script>
+    </head>
+    <body>
+        <button type="button">Start Animation</button>
+        <button type="button" id="btn1">Stop Animation</button>
+        <div class="b1"></div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+            /*$(document).ready(function(){
+                $("p").click(function(){
+                    $(this).slideUp();
+                });
+            });*/
+            $(document).ready(function(){
+                $("#p1").dblclick(function(){
+                    $(this).slideUp();
+                });
+                $("p").click(function(){
+                    $(this).slideUp();
+                });
+                $(".p2").hover(function(){
+                    $(this).css("background-color","blue");
+                },function(){
+                    $(this).css("background-color","green");
+                });
+            });
+
+            $(document).ready(function(){
+                $("p").mouseenter(function(){
+                    $(this).css("background-color","red");
+                });
+            });
+            
+            $(document).ready(function(){
+                $("#p3").mouseleave(function(){
+                    $(this).css("background-color","purple")
+                });
+            });
+        </script>
+        <body>
+            <p style="background-color: red;">Click here it will dispear</p>
+            <p style="background-color: green;">Click here it will disoear</p>
+            <p style="background-color:cornsilk;">Click here it will disoear</p>
+            <p id="p1" style="border: black; background-color: cadetblue;">Doble click heare</p>
+            <p class="p2">Mouse hover here</p>
+            <p>Mouse Enter Here</p>
+            <p id="p3">Mouse Leave</p>
+
+
+
+
+        </body>
+    </head>
+</html>
