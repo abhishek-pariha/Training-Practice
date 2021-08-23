@@ -1,0 +1,228 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="cmxform.css">
+      <link rel="stylesheet" href="cmxformTemplate.css">
+      <script src="jquery.validate.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https:////cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js">
+        </script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+        
+  
+        <script>
+            $(document).ready(function () {
+                $('#table1').DataTable();
+            });
+
+            $(Document).ready(function(){
+            $("#signupForm").validate({
+              rules: {
+                name:{
+                  required: true,
+                  minlength: 3
+                },
+                mobile:{
+                  required: true,
+                  number: true,
+                  minlength: 10,
+                  maxlength: 10
+                },
+                dob:{
+                  required: true,
+                  date: true
+                },
+                img:{
+                  required: true,
+                  extension: "JPEG|APNG"
+                },
+                password:{
+                  required: true,
+                  minlength: 6,
+                },
+                confirm_password:{
+                  required: true,
+                  minlength: 6,
+                  equalTo:"#password"
+                  
+                },
+                email:{
+                  required: true,
+                  email: true
+                }
+              } 
+            });
+          });
+        </script>
+        
+        </script>
+    </head>
+    <body>
+      <form class="cmxform" id="signupForm" method="get" action="">
+        <fieldset>
+          <legend>Validating a complete form</legend>
+          <p>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+          </p>
+          <p>
+            <label for="mobile">Mobile No</label>
+            <input id="mobile" name="mobile" class="mobile" required>
+          </p>
+          <p>
+            <label for="dob">DOB</label>
+            <input id="dob" name="dob" type="date" required>
+          </p>
+          <p>
+            <label for="img">Image</label>
+            <input id="img" name="img" type="file" required>
+          </p>
+          <p>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required>
+          </p>
+          <p>
+            <label for="confirm_password">Confirm password</label>
+            <input id="confirm_password" name="confirm_password" type="password" required>
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </p>
+          </fieldset>
+          <p>
+            <input class="submit" type="submit" value="Submit">
+          </p>
+        </fieldset>
+      </form>
+        
+      <table id="table1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Sex</th>
+                    <th>Occupation</th>
+                    <th>Natinolity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ram</td>
+                    <td>21</td>
+                    <td>Male</td>
+                    <td>Doctor</td>
+                    <td>Indian</td>
+                </tr>
+                <tr>
+                    <td>Mohan</td>
+                    <td>32</td>
+                    <td>Male</td>
+                    <td>Teacher</td>
+                    <td>Indian</td>
+                </tr>
+                <tr>
+                    <td>Rani</td>
+                    <td>42</td>
+                    <td>Female</td>
+                    <td>Nurse</td>
+                    <td>Indian</td>
+                </tr>
+                <tr>
+                    <td>Johan</td>
+                    <td>23</td>
+                    <td>Female</td>
+                    <td>Software Engineer</td>
+                    <td>German</td>
+                </tr>
+                <tr>
+                    <td>Shajia</td>
+                    <td>39</td>
+                    <td>Female</td>
+                    <td>Farmer</td>
+                    <td>Indian</td>
+                </tr>
+                <tr>
+                    <td>Jack</td>
+                    <td>19</td>
+                    <td>Male</td>
+                    <td>Student</td>
+                    <td>British</td>
+                </tr>
+                <tr>
+                    <td>Hina</td>
+                    <td>30</td>
+                    <td>Female</td>
+                    <td>Artist</td>
+                    <td>Indian</td>
+                </tr>
+                <tr>
+                    <td>Gauhar</td>
+                    <td>36</td>
+                    <td>Female</td>
+                    <td>Artist</td>
+                    <td>Indian</td>
+                </tr>
+                <tr>
+                    <td>Jacky</td>
+                    <td>55</td>
+                    <td>Female</td>
+                    <td>Bank Manager</td>
+                    <td>Indian</td>
+                </tr>
+                <tr>
+                    <td>Pintu</td>
+                    <td>36</td>
+                    <td>Male</td>
+                    <td>Clerk</td>
+                    <td>Indian</td>
+                </tr>
+                <tr>
+                    <td>Sumit</td>
+                    <td>33</td>
+                    <td>Male</td>
+                    <td>Footballer</td>
+                    <td>Indian</td>
+                </tr>
+                <tr>
+                    <td>Radhu</td>
+                    <td>40</td>
+                    <td>Female</td>
+                    <td>Coder</td>
+                    <td>Bangladesh</td>
+                </tr>
+                <tr>
+                    <td>Mamta</td>
+                    <td>49</td>
+                    <td>Female</td>
+                    <td>Student</td>
+                    <td>Ind-American</td>
+                </tr>
+                <tr>
+                    <td>Priya</td>
+                    <td>36</td>
+                    <td>Female</td>
+                    <td>Worker</td>
+                    <td>Indian</td>
+                </tr>
+                <tr>
+                    <td>Johnny</td>
+                    <td>41</td>
+                    <td>Male</td>
+                    <td>Forest Officer</td>
+                    <td>American</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Sex</th>
+                    <th>Occupation</th>
+                    <th>Natinolity</th>
+                </tr>        
+            </tfoot>
+        </table>
+    </body>
+</html>
