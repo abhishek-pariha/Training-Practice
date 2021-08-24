@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("input").click(function(){
+                   // $('this').focus().css("background-color","yellow");
+                    $("input:focus").css("background-color","yellow");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Heading</h1>
+        <div>
+           Name: <input type="text" name="name" />
+        </div>
+    </body>
+</html>
