@@ -3,38 +3,37 @@
         <script type="text/javascript">
             var Calculator = function () 
             {
-                var result = 0;
-                this.Add = function (x) 
+                var result = 10;
+                this.add = function (x) 
                 {
                      result = result + x;
                      return this;
-                };
-                this.Sub = function (x)
+                }
+                this.sub = function (x)
                 {
                     result = result - x;
                     return this;
                 }
-                this.Div = function (x)
+                this.div = function (x)
                 {
                     result = result / x;
                     return this;
                 }
-                this.Multiply = function (x) 
+                this.multiply = function (x) 
                 {
 
                     result = result * x;
                     return this;
-                };
+                }
 
                 this.Result = function () 
                 {
                     return result;
                 }
-
             };
 
-                var total = new Calculator().Add(10).Add(5).Multiply(2).Div(3).Sub(2);
-                alert(total.Result());
+                var obj = new Calculator(10).Add(5).Multiply(2).Div(3).Sub(2);
+                alert(obj.Result());
         </script>
     </head>
 </html>
