@@ -1,0 +1,32 @@
+<html>
+<head>
+  <style>
+  div {
+    color: blue;
+  }
+  p {
+    color: green;
+  }
+  span {
+    color: red;
+    display: none;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<div>Try scrolling the iframe.</div>
+<p>Paragraph - <span>Scroll happened!</span></p>
+ 
+<script>
+$( "p" ).clone().appendTo( document.body );
+$( "p" ).clone().appendTo( document.body );
+$( "p" ).clone().appendTo( document.body );
+$( window ).scroll(function() {
+  $( "span" ).css( "display", "inline" ).fadeOut( "slow" );
+});
+</script>
+ 
+</body>
+</html>

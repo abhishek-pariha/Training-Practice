@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <style>
+            .selected{
+            color: blue;
+        }
+        .higlight
+        {
+            background: burlywood;
+        }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("p").last().addClass("selected");
+                $("p").first().addClass("higlight");
+            });
+        </script>
+    </head>
+    <body>
+        <p>Cricket</p>
+        <p>Volleyball</p>
+        <p>Chess</p>
+    </body>
+</html>
