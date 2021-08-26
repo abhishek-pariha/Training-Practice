@@ -1,0 +1,111 @@
+<!--Textarea Maximum 160 chr ramaining
+
+<html>
+    <head>
+        <style type="text/css">
+        textarea{
+            display: block;
+            margin: 1em 0;
+        }
+        </style>
+        <script src="jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var maxLength = 100;
+                $("textarea").keyup(function() {
+                var length = $(this).val().length;
+                var length = maxLength-length;
+                $('#chars').text(length);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <form>
+          
+            <textarea id="textareaChars" maxlength="100"></textarea>
+            <span id="chars">100</span> characters remaining
+            
+          </form>
+    </body>
+</html>-->
+
+<!--Jquery choseen(Enter 5 city in Dropedown)
+
+<html>
+<head>
+    <script type="text/javascript" src="jquery-3.6.0.js">
+        $(document).ready(function(){
+            $(".chosen").chosen();
+        });
+        </script>
+</head>
+<body>
+<select class="chosen" style="width:200px;">
+	<option>Choose...</option>
+	<option>jQuery</option>
+	<option selected="selected">MooTools</option>
+	<option>Prototype</option>
+	<option>Dojo Toolkit</option>
+</select>
+
+
+</body>
+</html>-->
+<!--CKEditor
+<html>
+        <head>
+                
+                <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+        </head>
+        <body>
+                <textarea name="editor1">
+                    My Name is Abhishek Singh Parihar. I am from Burhanpur(M.P).<br/>
+                    I have done M.C.A and working as a Software Developer. 
+                </textarea>
+                <script>
+                        CKEDITOR.replace( 'editor1' );
+                </script>
+        </body>
+</html>-->
+<!--DatePicker
+<html >
+<head>
+  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+</head>
+<body>
+ 
+<p>Date: <input type="text" id="datepicker"></p>
+ 
+ 
+</body>
+</html>-->
+
+<html>
+    <head>
+        <link rel="stylesheet" href="jquery.timepicker.css" />
+
+        
+        <script type="text/javascript" src="jquery.timepicker.js"> </script>
+        <script type="text/javascript">
+        $(function() {
+            $('#basicExample').timepicker({
+                // options here
+            });
+            });
+        </script>
+    </head>
+    <body>
+        <input id="basicExample" type="text" class="time" />
+
+    </body>
+</html>
